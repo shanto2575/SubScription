@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Resume Builder",
+        "description": "Create professional resumes in minutes with AI assistance.",
+        "price": 0,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "50+ templates",
+            "ATS optimization",
+            "Export to PDF"
+        ],
+        "icon": "https://i.ibb.co.com/nMRhDfBq/design-tool.png"
+    },
+    {
+        "id": 2,
+        "name": "Portfolio Generator",
+        "description": "Build a stunning personal portfolio without coding.",
+        "price": 9,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "Custom domains",
+            "SEO optimized",
+            "One-click deploy"
+        ],
+        "icon": "https://i.ibb.co.com/5xFbssHY/Group.png"
+    },
+    {
+        "id": 3,
+        "name": "Cover Letter AI",
+        "description": "Generate tailored cover letters using AI.",
+        "price": 5,
+        "period": "monthly",
+        "tag": "Best Seller",
+        "tagType": "best",
+        "features": [
+            "AI writing",
+            "Multiple formats",
+            "Download as PDF"
+        ],
+        "icon": "https://i.ibb.co.com/nMRhDfBq/design-tool.png"
+    },
+    {
+        "id": 4,
+        "name": "Interview Coach",
+        "description": "Practice interviews with AI-powered feedback.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "Mock interviews",
+            "Instant feedback",
+            "Performance analytics"
+        ],
+        "icon": "https://i.ibb.co.com/j9XSQL1x/operation.png"
+    },
+    {
+        "id": 5,
+        "name": "LinkedIn Optimizer",
+        "description": "Improve your LinkedIn profile visibility.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "Profile analysis",
+            "Keyword optimization",
+            "Headline generator"
+        ],
+        "icon": "https://i.ibb.co.com/LhvC9JF4/portfolio.png"
+    },
+    {
+        "id": 6,
+        "name": "Freelancer Toolkit",
+        "description": "All-in-one toolkit for freelancers and creators.",
+        "price": 49,
+        "period": "one-time",
+        "tag": "Best Seller",
+        "tagType": "best",
+        "features": [
+            "Invoice generator",
+            "Proposal templates",
+            "Client CRM"
+        ],
+        "icon": "https://i.ibb.co.com/8g20h5w6/social-media.png"
+    },
+    {
+        "id": 7,
+        "name": "Job Tracker",
+        "description": "Track all your job applications in one place.",
+        "price": 7,
+        "period": "monthly",
+        "tag": "Popular",
+        "tagType": "popular",
+        "features": [
+            "Application tracking",
+            "Reminders",
+            "Notes & status updates"
+        ],
+        "icon": "https://i.ibb.co.com/qYSYDqXX/writing-2327400-1.png"
+    },
+    {
+        "id": 8,
+        "name": "Personal Branding Kit",
+        "description": "Build a strong personal brand online.",
+        "price": 29,
+        "period": "yearly",
+        "tag": "Best Seller",
+        "tagType": "best",
+        "features": [
+            "Brand templates",
+            "Social banners",
+            "Color palettes"
+        ],
+        "icon": "https://i.ibb.co.com/nMRhDfBq/design-tool.png"
+    },
+    {
+        "id": 9,
+        "name": "AI Content Writer",
+        "description": "Generate blog posts, captions and more instantly.",
+        "price": 19,
+        "period": "monthly",
+        "tag": "New",
+        "tagType": "new",
+        "features": [
+            "Blog generator",
+            "Social media captions",
+            "SEO keywords"
+        ],
+        "icon": "https://i.ibb.co.com/j9XSQL1x/operation.png"
+    }
+]
