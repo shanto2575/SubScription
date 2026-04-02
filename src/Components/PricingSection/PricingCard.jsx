@@ -1,21 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Features from './Features';
+import { toast } from 'react-toastify';
 
 const PricingCard = ({ price }) => {
 
     const { name, prices, billing, features, buttonText, subtitle, popular } = price;
     const isPopular = popular === true;
 
+    const [purchased, setPurchased] = useState(false)
+
+    const handlerPricingCard = () => {
+
+        if (purchased) {
+            toast.error(`${name} is already purchased !`, {
+                position: 'top-right',
+                theme:'colored'
+            })
+            return;    
+        }
+        setPurchased(true);
+        toast.success(`${name} is Purchased Successfully !`,{
+            position:'top-right',
+            theme:'colored'
+        })
+    }
+
     return (
-        <div className="h-full mt-7"> 
+        <div className="h-full mt-7">
             <div
                 className={`card relative h-full flex flex-col
                 ${isPopular
-                    ? "bg-linear-to-br from-indigo-600 to-purple-600 text-white shadow-[0_0_35px_rgba(99,102,241,0.5)]"
-                    : "bg-base-100 shadow-[0_0_25px_rgba(0,0,0,0.15)]"
-                }`}
+                        ? "bg-linear-to-br from-indigo-600 to-purple-600 text-white shadow-[0_0_35px_rgba(99,102,241,0.5)]"
+                        : "bg-base-100 shadow-[0_0_25px_rgba(0,0,0,0.15)]"
+                    }`}
             >
-                
+
                 {isPopular && (
                     <span className="badge badge-warning absolute -top-3 left-1/2 -translate-x-1/2">
                         Most Popular
@@ -45,13 +64,14 @@ const PricingCard = ({ price }) => {
                     </div>
                     <div className="mt-auto pt-6">
                         <button type='button'
+                            onClick={handlerPricingCard}
                             className={`btn btn-block rounded-full p-6 text-xl
-                            ${isPopular 
-                                ? "bg-white text-purple-700 hover:bg-gray-200 border-0" 
-                                : "btn-primary"}
+                            ${isPopular
+                                    ? "bg-white text-purple-700 hover:bg-gray-200 border-0"
+                                    : "btn-primary"}
                             `}
                         >
-                            {buttonText}
+                            {purchased ? 'Purchased' : buttonText}
                         </button>
                     </div>
 
