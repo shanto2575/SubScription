@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import HeroSection from './Components/HeroSection/HeroSection'
@@ -12,34 +12,40 @@ import Footer from './Components/footer/Footer'
 
 
 //Pricing Section
-const fetchPricing=async()=>{
-    const res=await fetch('/pricingSection.json')
+const fetchPricing = async () => {
+    const res = await fetch('/pricingSection.json')
     return res.json()
 }
 
 //Product Section
-const fetchProduct=async()=>{
-    const res=await fetch('/ProductCard.json')
+const fetchProduct = async () => {
+    const res = await fetch('/ProductCard.json')
     return res.json()
 }
 
 const App = () => {
-    const pricingPromise=fetchPricing()
+    const pricingPromise = fetchPricing()
+    const productPromise = fetchProduct()
 
-    const productPromise=fetchProduct()
+    const [selectType, setselectType] = useState('product')
+
+    const [selectCard, setselectCard] = useState([])
+
     return (
         <div>
-            <Navbar></Navbar>
-            <HeroSection></HeroSection>
-            <HeroActive></HeroActive>
-            <StepsSection></StepsSection>
-            <Suspense fallback={<p>Pricing Section Loading....</p>}>
-                <PricingSection pricingPromise={pricingPromise}></PricingSection>
-            </Suspense>
-            <Suspense fallback={<p>Product Section Card Loading...</p>}>
-                <ProductSection productPromise={productPromise}></ProductSection>
-            </Suspense>
-            <Workflow></Workflow>
+            <Navbar selectCard={selectCard}></Navbar>
+            <main>
+                <HeroSection></HeroSection>
+                <HeroActive></HeroActive>
+                <StepsSection></StepsSection>
+                <Suspense fallback={<p>Pricing Section Loading....</p>}>
+                    <PricingSection pricingPromise={pricingPromise}></PricingSection>
+                </Suspense>
+                <Suspense fallback={<p>Product Section Card Loading...</p>}>
+                    <ProductSection productPromise={productPromise} selectCard={selectCard} setselectCard={setselectCard} selectType={selectType} setselectType={setselectType}></ProductSection>
+                </Suspense>
+                <Workflow></Workflow>
+            </main>
             <Footer></Footer>
 
             <ToastContainer />

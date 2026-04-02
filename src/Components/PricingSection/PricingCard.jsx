@@ -44,7 +44,7 @@ const PricingCard = ({ price }) => {
                         }
                     </div>
                     <div className="mt-auto pt-6">
-                        <button
+                        <button type='button'
                             className={`btn btn-block rounded-full p-6 text-xl
                             ${isPopular 
                                 ? "bg-white text-purple-700 hover:bg-gray-200 border-0" 

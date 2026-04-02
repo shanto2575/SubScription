@@ -15,34 +15,34 @@ const Footer = () => {
                 <div className='flex justify-center gap-20'>
                     <nav className='flex flex-col space-y-3'>
                         <h6 className="footer-title">Services</h6>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <p className="link link-hover">Branding</p>
+                        <p className="link link-hover">Marketing</p>
+                        <p className="link link-hover">Design</p>
+                        <p className="link link-hover">Advertisement</p>
                     </nav>
 
                     <nav className='flex flex-col space-y-3'>
                         <h6 className="footer-title">Company</h6>
-                        <a className="link link-hover">About us</a>
-                        <a className="link link-hover">Contact</a>
-                        <a className="link link-hover">Jobs</a>
-                        <a className="link link-hover">Press kit</a>
+                        <p className="link link-hover">About us</p>
+                        <p className="link link-hover">Contact</p>
+                        <p className="link link-hover">Jobs</p>
+                        <p className="link link-hover">Press kit</p>
                     </nav>
                     <nav className='flex flex-col space-y-3'>
                         <h6 className="footer-title">Resources</h6>
-                        <a className="link link-hover">Documentation</a>
-                        <a className="link link-hover">Help Center</a>
-                        <a className="link link-hover">Community</a>
-                        <a className="link link-hover">Contact</a>
+                        <p className="link link-hover">Documentation</p>
+                        <p className="link link-hover">Help Center</p>
+                        <p className="link link-hover">Community</p>
+                        <p className="link link-hover">Contact</p>
                     </nav>
                 </div>
 
                 <nav className='flex flex-col justify-center items-center'>
                     <h6 className="footer-title">Social</h6>
                     <div className="grid grid-flow-col gap-4">
-                        <a href=''><FaFacebook></FaFacebook></a>
-                        <a href=''><FaInstagram></FaInstagram></a>
-                        <a href=''><FaTwitter></FaTwitter></a>
+                        <button><FaFacebook></FaFacebook></button>
+                        <button><FaInstagram></FaInstagram></button>
+                        <button><FaTwitter></FaTwitter></button>
                     </div>
                 </nav >
             </footer>

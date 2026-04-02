@@ -1,4 +1,4 @@
-import { Check, CircleCheckBig } from 'lucide-react'
+import { Check, } from 'lucide-react'
 import React from 'react'
 
 const Features = ({ features }) => {

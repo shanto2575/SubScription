@@ -1,15 +1,14 @@
-import React, { use, useState } from 'react'
+import React, { use} from 'react'
 import Product from './Product'
 import CartSection from './CartSection'
-import SelectedCard from './../../../../BPL-Dreams-11/src/Components/UI/SelectedCard';
 
-const ProductSection = ({ productPromise }) => {
+const ProductSection = ({ productPromise,selectCard,setselectCard ,selectType, setselectType}) => {
     const productData = use(productPromise)
     // console.log(productData);
 
-    const [selectType, setselectType] = useState('product')
+    // const [selectType, setselectType] = useState('product')
 
-    const [selectCard, setselectCard] = useState([])
+    // const [selectCard, setselectCard] = useState([])
 
     return (
         <div className='container mx-auto space-y-4 my-10 lg:my-20'>

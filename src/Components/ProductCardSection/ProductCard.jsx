@@ -53,14 +53,14 @@ const ProductCard = ({ product,selectCard,setselectCard }) => {
                     </div>
                     <div className="p-5 mt-5 flex-1">
                         {
-                            features.map(feature=><FeaturesInfo feature={feature}></FeaturesInfo>)
+                            features.map((feature,index)=><FeaturesInfo key={index} feature={feature}></FeaturesInfo>)
                         }
                     </div>
                     <div className="mt-6">
-                        <button 
+                        <button type='button' 
                         onClick={handerSelectCard}
                         className={`btn ${isSelected ? 'bg-green-400':'bg-linear-to-r from-indigo-600 to-purple-600'} text-white w-full rounded-full text-lg`}>
-                            {isSelected===true ? 'Add To Cart' : 'Buy Now'}
+                            {isSelected ? 'Add To Cart' : 'Buy Now'}
                         </button>
                     </div>
                 </div>
