@@ -14,7 +14,7 @@ const StepsSection = () => {
                     <figure className="px-10 pt-10">
                         <img
                             src={User}
-                            alt="Users"
+                            alt={"Users"}
                             className="w-24 h-24 p-5 bg-purple-100 rounded-full object-cover" />
                     </figure>
                     <div className="card-body items-center text-center">
@@ -27,7 +27,7 @@ const StepsSection = () => {
                     <figure className="px-10 pt-10">
                         <img
                             src={Package}
-                            alt="Users"
+                            alt="Package"
                             className="w-24 h-24 p-5 bg-purple-100 rounded-full object-cover" />
                     </figure>
                     <div className="card-body items-center text-center">
@@ -41,7 +41,7 @@ const StepsSection = () => {
                     <figure className="px-10 pt-10">
                         <img 
                             src={Rocket}
-                            alt="Users"
+                            alt="Rocket"
                             className="w-24 h-24 p-5 bg-purple-100 rounded-full object-cover" />
                     </figure>
                     <div className="card-body items-center text-center">

@@ -1,4 +1,5 @@
 import React, { Suspense, useState } from 'react'
+import { ToastContainer } from 'react-toastify';
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import HeroSection from './Components/HeroSection/HeroSection'
@@ -6,10 +7,8 @@ import HeroActive from './Components/HeroSection/HeroActive'
 import StepsSection from './Components/StepsSection/StepsSection'
 import PricingSection from './Components/PricingSection/PricingSection'
 import ProductSection from './Components/ProductCardSection/ProductSection'
-import { ToastContainer } from 'react-toastify';
 import Workflow from './Components/WorkFlow/Workflow'
 import Footer from './Components/footer/Footer'
-
 
 //Pricing Section
 const fetchPricing = async () => {
@@ -28,7 +27,6 @@ const App = () => {
     const productPromise = fetchProduct()
 
     const [selectType, setselectType] = useState('product')
-
     const [selectCard, setselectCard] = useState([])
 
     return (
